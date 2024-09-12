@@ -1,0 +1,4 @@
+baseURL = 'https://vinecodes.github.io/codestack/'
+languageCode = 'en-us'
+title = 'CodeStack Blog'
+theme = "Holy"
