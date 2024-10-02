@@ -1,6 +1,6 @@
 +++
 title = 'Introduction To Step Function: Orchestrating Complex Workflows'
-date = 2024-10-12T07:00:00+05:30
+date = 2024-10-03T00:05:35+05:30
 +++
 
 I was inspired to replicate the functionality of AWS Step Functions in my own code when I couldn't find any libraries that suited my needs for orchestrating complex workflows. This led me to design a custom Step Function library to handle sequential and parallel execution, branch logic, error handling, and more.
@@ -9,7 +9,7 @@ I was inspired to replicate the functionality of AWS Step Functions in my own co
 
 A **Step Function** helps developers orchestrate complex workflows and track the execution status at each step. It essentially functions as a **directed acyclic graph (DAG)** where each node represents a function call, and the connections between nodes define the order of execution. Every node in the graph points to the next step, unidirectionally, and each step depends on the result of the previous step—except for the first.
 
-You can install the package directly from [PyPI](https://pypi.org/project/stepfunction/){target="_blank"}
+You can install the package directly from [PyPI](https://pypi.org/project/stepfunction/).
 
 ```bash
 pip install stepfunction
