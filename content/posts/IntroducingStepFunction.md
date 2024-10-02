@@ -27,8 +27,8 @@ from stepfunction.core.step_function import StepFunction
 
 # Simulating the workflow steps for handling a car purchase transaction
 
-def validate_car_purchase_transaction():
-    """Simulate validating the car purchase transaction."""
+def parse_car_purchase_transaction():
+    """Simulate parsing the car purchase transaction."""
     pass
 
 def check_if_car_purchase_transaction_is_valid():
@@ -69,7 +69,7 @@ async def validate_account_workflow():
     step_function = StepFunction(
         name="Validate_Car_Purchase_Transaction_Workflow")
 
-    step_function.add_step("Parse_Car_Purchase_Transaction", func=validate_car_purchase_transaction,
+    step_function.add_step("Parse_Car_Purchase_Transaction", func=parse_car_purchase_transaction,
                            next_step="Check_If_Car_Purchase_Transaction_Is_Valid", on_failure="Generic_Failure_Handler")
 
     step_function.add_step("Check_If_Car_Purchase_Transaction_Is_Valid", func=check_if_car_purchase_transaction_is_valid, branch={
@@ -100,6 +100,8 @@ async def validate_account_workflow():
 
     step_function.add_step("Generic_Failure_Handler",
                            func=generic_failure_handler)
+
+    step_function.set_start_step("Parse_Car_Purchase_Transaction")                   
 
     await step_function.execute()
 
