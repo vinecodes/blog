@@ -65,7 +65,7 @@ def generic_failure_handler():
 
 
 
-async def validate_account_workflow():
+async def validate_car_purchase_transaction_workflow():
     step_function = StepFunction(
         name="Validate_Car_Purchase_Transaction_Workflow")
 
