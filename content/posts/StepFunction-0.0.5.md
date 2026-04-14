@@ -4,7 +4,7 @@ date = 2026-04-15T02:30:37+05:30
 draft = false
 +++
 
-I have been using the `stepfunction` library across many of my projects where orchestration makes the code easier to reason about. While working with it, I kept running into a few missing pieces — smarter branching, built-in steps for common patterns like waiting and timeouts, and a way to handle transient failures gracefully. Version 0.0.5 addresses all of these.
+I have been using the `stepfunction` library across many of my projects where orchestration makes the code easier to reason about. While working with it, I kept running into a few missing pieces — smarter branching, built-in steps for common patterns like waiting and timeouts, and a way to handle transient failures gracefully. Version 0.0.5 addresses all of these. It also fixes Python 3.9 compatibility, so everything works on 3.9 and above.
 
 ## Callable Branch Routing
 
