@@ -1,6 +1,6 @@
 [submodule "themes/holy"]
 	path = themes/holy
-	url = https://github.com/serkodev/holy.git
+	url = https://github.com/vinecodes/holy.git
 [submodule "public"]
 	path = public
 	url = https://github.com/vinecodes/codestack.git

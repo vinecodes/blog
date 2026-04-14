@@ -2,3 +2,6 @@ baseURL = 'https://blog.vineethp.com/'
 languageCode = 'en-us'
 title = 'CodeStack Blog'
 theme = "Holy"
+
+[params]
+  author = 'Vineeth Penugonda'
